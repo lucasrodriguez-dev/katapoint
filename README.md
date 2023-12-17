@@ -1,5 +1,4 @@
 # KataPoint
-***
 ## Descripción
 Este fue un proyecto de egreso realizado por un equipo de cuatro estudiantes uruguayos del Instituto Superior Brazo Oriental.
 La consigna era implementar un **software para gestionar los torneos de karate en la modalidad kata**, realizados por la Confederación Uruguaya de Karate. 
