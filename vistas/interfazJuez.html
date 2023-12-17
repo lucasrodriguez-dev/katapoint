@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/OnPoint.png" sizes="32x32" type="image/png">
+    <title>KATA POINT</title>
+</head>
+
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>KATA POINT</h1>
+            <img src="imagenes/logo_sistema.png" width="250px" alt="katapoint" title="logo de katapoint" class="logo">
+        </header>
+    </a>
+    <section class="container center">
+        <h2 id="torneo"></h2>
+        <h2 id="kata"></h2>
+        <h3 id="equipo"></h3>
+        <section id="formulario">
+            <input type="number" min="0.0" max="10.0" step="0.1" placeholder="Puntaje" id="puntaje" required>
+            <br>
+            <input type="submit" value="Puntuar" class="btn" id="btn_ingresar">
+        </section>
+        <p id="mensaje"></p>
+        <button class="btn btn_cerrarSesion">Cerrar sesión</button>
+    </section>
+    <footer></footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="module" src="../controladores/js/JuezInterfazController.js"></script>
+</body>
+
+</html>

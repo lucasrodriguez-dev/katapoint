@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/OnPoint.png" sizes="32x32" type="image/png">
+    <title>KATA POINT</title>
+</head>
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>KATA POINT</h1>
+            <img src="imagenes/logo_sistema.png" width="250px" alt="katapoint" title="logo de katapoint" class="logo">
+        </header>
+    </a>
+    <section class="container center">
+        <h2 id="subtitulo"></h2>
+        <p id="mensaje"></p>
+        <details>
+            <summary>Mostrar al público</summary>
+            <button class="btn btn_mostrar" id="info_torneo">Torneo</button>
+            <button class="btn btn_mostrar" id="info_participantes">Participantes</button>
+            <button class="btn btn_mostrar" id="info_grupos">Grupos</button>
+            <button class="btn btn_mostrar" id="info_cruces">Cruces</button>
+            <button class="btn btn_mostrar" id="info_kata">Kata</button>
+            <button class="btn btn_mostrar" id="info_clasificados">Clasificados</button>
+        </details>
+        <form id="form_equipos" action="equipos.html" method="post">
+            <input type="hidden" value="equipo">
+            <br>
+            <input type="submit" value="Equipos" class="btn">
+        </form>
+        <form action="competidores.html" method="post">
+            <input type="hidden" value="competidor">
+            <br>
+            <input type="submit" value="Competidores" class="btn">
+        </form>
+        <form action="grupos.html" method="post">
+            <input type="hidden" value="grupos">
+            <br>
+            <input type="submit" value="Grupos" class="btn">
+        </form>
+        <form action="enfrentamientos.html" method="post">
+            <input type="hidden" value="enfrentamiento">
+            <br>
+            <input type="submit" value="Enfrentamientos" class="btn">
+        </form>
+        <form action="katas.html" method="post">
+            <input type="hidden" value="kata">
+            <br>
+            <input type="submit" value="Katas" class="btn">
+        </form>
+        <button class="btn" onclick="window.history.back()">Volver</button>
+    </section>
+    <footer></footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="module" src="../controladores/js/TecnicoSoftwareInterfazController.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/OnPoint.png" sizes="32x32" type="image/png">
+    <title>KataPoint - Nuevo Torneo</title>
+</head>
+
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>KATA POINT</h1>
+            <img src="imagenes/logo_sistema.png" width="250px" alt="katapoint" title="logo de katapoint" class="logo">
+        </header>
+    </a>
+    <section class="container center">
+        <h2>Creación de Torneo</h2>
+        <form action="">
+            <section class="form-group">
+                <input type="text" placeholder="Nombre" id="nombreTorneo" required>
+                <label>Fecha del torneo</label>
+                <input type="date" placeholder="Fecha" id="fechaTorneo" required>
+                <select id="modalidadTorneo" required>
+                    <option value="">Modalidad</option>
+                    <option value="individual">Individual</option>
+                    <option value="equipo">Equipo</option>
+                </select>
+                <select id="sexoTorneo" required>
+                    <option value="">Sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <select id="rangoEdadTorneo" required>
+                    <option value="">Rango de edad</option>
+                    <option value="12/13">12/13</option>
+                    <option value="14/15">14/15</option>
+                    <option value="16/17">16/17</option>
+                    <option value="mayores">Mayores</option>
+                </select>
+                <input type="number" min="0" placeholder="Cantidad de inscriptos" id="cantidadInscriptosTorneo"
+                    required>
+                <select id="cantidadJuecesTorneo" required>
+                    <option value="">Cantidad de Jueces</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                </select>
+            </section>
+            <section class="form-group">
+                <label>Jueces</label>
+                <table>
+                    <thead>
+                        <th>n°</th>
+                        <th>nombre completo</th>
+                        <th>contraseña a ingresar</th>
+                    </thead>
+                    <tbody id="tablaJueces">
+                    </tbody>
+                </table>
+            </section>
+            <input type="button" value="Crear torneo" class="btn" id="btn_ingresar">
+        </form>
+        <p id="mensaje"></p>
+        <button class="btn" onclick="window.history.back()">Volver</button>
+    </section>
+    <footer></footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="module" src="../controladores/js/TorneoController.js"></script>
+</body>
+
+</html>

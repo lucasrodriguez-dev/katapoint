@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/OnPoint.png" sizes="32x32" type="image/png">
+    <title>KATA POINT - Login Técnico de Software</title>
+</head>
+
+<body>
+    <a href="../index.html">
+        <header>
+            <h1>KATA POINT</h1>
+            <img src="imagenes/logo_sistema.png" width="250px" alt="katapoint" title="logo de katapoint" class="logo">
+        </header>
+    </a>
+    <section class="container center">
+        <h2>Técnico de Software</h2>
+        <form action="" method="get">
+            <input type="text" placeholder="Nombre de usuario" id="nombreUsuarioTecnicoSoftware" required>
+            <input type="password" placeholder="Clave" id="claveTecnicoSoftware" required>
+            <br>
+            <input type="button" value="Iniciar sesión" class="btn" id="btn_ingresar"><br>
+            <input type="button" value="Registrarme" class="btn" id="btn_registrar">
+        </form>
+        <p id="mensaje"></p>
+        <button class="btn" onclick="window.history.back()">Volver</button>
+    </section>
+    <footer></footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="module" src="../controladores/js/TecnicoSoftwareLoginController.js"></script>
+</body>
+
+</html>

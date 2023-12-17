@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <base href="http://localhost/GitHub/SIGT/Web%20KataPoint/">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vistas/styles.css">
+    <link rel="icon" href="vistas/imagenes/OnPoint.png" sizes="32x32" type="image/png">
+    <title>KATA POINT</title>
+</head>
+<body>
+    <a href="index.html">
+        <header>
+            <h1>KATA POINT</h1>
+            <img src="vistas/imagenes/logo_sistema.png" width="250px" alt="katapoint" title="logo de katapoint" class="logo">
+        </header>
+    </a>
+    <section class="container center">
+        <h2>Seleccione una opción:</h2>
+        <form action="vistas/loginJuez.html" method="post">
+            <input type="hidden" name="juez" value="juez">
+            <input type="submit" value="Juez" class="btn">
+        </form>
+        <form action="vistas/loginTecnicoSoftware.html" method="post">
+            <input type="hidden" name="tecnico" value="tecnico">
+            <input type="submit" value="Técnico de Software" class="btn">
+        </form>
+        <button class="btn" onclick="window.history.back()">Volver</button>
+    </section>
+    <footer>  
+
+    </footer>
+</body>
+</html>
